@@ -1,21 +1,22 @@
-body{
-    color: #212121;
-    background-color: #f5f5f5;
-    font-family: Roboto;
-    text-decoration: none;
-   
+:root {
+    --primary-wtite-color: #f5f5f5;
+    --primary-text-color: #212121;
+    --second-text-color: #757575;
+    --accent-color: #2196f2;
+    --logo-text-color: #000000;
+    --background-color: #2F303A;
+    --second-background-color: #ffffff;
+    --rgba-color: #000000, 0.15;
+
 
 }
-:root {--primary-wtite-color: #f5f5f5;
-       --primary-text-color: #212121;
-       --second-text-color: #757575;
-       --accent-color: #2196f2;
-       --logo-text-color: #000000;
-       --background-color: #2F303A;
-       --second-background-color: #ffffff;
 
-
-
+body{
+    color: var(--primary-text-color);
+    background-color: var(--primary-wtite-color);
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+   
 
 }
 
@@ -26,8 +27,7 @@ li {
    }
 
 .span {
-    font-family: Raleway;
-    font-weight: 700;
+    font-family: "Raleway", sans-serif;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
@@ -47,7 +47,7 @@ li {
 .site-nav,
 .auto-nav {
     font-size: 500;
-    font-size: 14;
+    font-size: 14px;
     line-height: 1.14;
     
 
@@ -77,27 +77,30 @@ a {
 }
 
 .hero {
-    width: 1600;
-    height: 600;
-    left: 0;
-    top: 80;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
     background: var(--background-color);
 }
 
 .hero-title {
     font-weight: 900;
-    font-size: 44;
+    font-size: 44px;
     line-height: 1.36;
     color: var(--second-background-color);
+    text-transform: uppercase;
+    text-align: center;
 }
 .hero-button {
-    font-weight: 700;
-    font-size: 16;
+    font-size: 16px;
     line-height: 1.87;
     color: var(--second-background-color);
+
     background-color: var(--accent-color);
-    box-shadow: 0 4 4 ;
-    border-radius: 4;
+    box-shadow: 0px 4px 4px ;
+    border-radius: 4px;
+     
 
 }
 .hero-button:hover, 
@@ -106,52 +109,65 @@ a {
 }
 
 .about-advances {
-        font-weight: 700;
-    font-size: 14;
+    font-size: 14px;
     line-height: 1.14;
     }
 .about-text{
    
-    font-weight: 400;
-    font-size: 14;
+ 
+    font-size: 14px;
     line-height: 1.71;
     color: var(--second-text-color)
 }
     .title {
-    font-weight: 700;
-    font-size: 36;
+    font-size: 36px;
     line-height: 1.16;
-    color: #212121;
-    ;
 }
 .title-name-team {
     font-weight: 500;
-    font-size: 16;
+    font-size: 16px;
     line-height: 1.18;
     
 }
 .text-name-team {
-    font-weight: 400;
-    font-size: 16;
+    font-size: 16px;
     line-height: 1.18;
     color: var(--second-text-color);
-    ;
+}
+
+.name-portfolio {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    }
+
+.text-portfolio-site {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--second-text-color);
 }
 .adress-footer{
+    font-style: normal;
     text-decoration: none;
     font-weight: 400;
-    font-size: 14;
+    font-size: 14px;
     line-height: 1.71;
     color: var(--second-background-color);
     background: var(--background-color);
-    width: 1600;
-    height: 252;
-    left: 0;
-    top: 2094;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2094px;
+
+}
+.adress-footer:hover,
+.adress-footer:focus {
+    color: var(--accent-color);
 }
 .button {
     font-weight: 400;
-    font-size: 16;
+    font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color);
 }
@@ -159,15 +175,4 @@ a {
 .button:focus {
     color: var(--second-background-color);
     background-color: var(--accent-color);
-}
-.name-portfolio {
-    font-weight: 700;
-    font-size: 18;
-    line-height: 2;
-    }
-.text-portfolio-site {
-    font-weight: 400;
-    font-size: 16;
-    line-height: 1.87;
-    color: var(--second-text-color);
 }
