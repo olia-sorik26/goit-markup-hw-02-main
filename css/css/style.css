@@ -6,14 +6,14 @@
     --logo-text-color: #000000;
     --background-color: #2F303A;
     --second-background-color: #ffffff;
-    --rgba-color: #000000, 0.15;
+    --rgba-color: rgba(255, 255, 255, 0.6);
+    --rgba-tean-color: #f5f4f4;
 
 
 }
-
+ 
 body{
     color: var(--primary-text-color);
-    background-color: var(--primary-wtite-color);
     font-family: "Roboto", sans-serif;
     text-decoration: none;
    
@@ -48,7 +48,7 @@ li {
 }
 .site-nav,
 .auto-nav {
-    font-size: 500;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     
@@ -79,10 +79,6 @@ a {
 }
 
 .hero {
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
     background: var(--background-color);
 }
 
@@ -98,16 +94,12 @@ a {
     font-size: 16px;
     line-height: 1.87;
     color: var(--second-background-color);
-
     background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px ;
-    border-radius: 4px;
-     
-
+    border: none;
 }
 .hero-button:hover, 
 .hero-button:focus {
-    color: var(--accent-color); 
+    color: var(--primary-wtite-color); 
 }
 
 .about-advances {
@@ -115,13 +107,28 @@ a {
     line-height: 1.14;
     }
 .about-text{
-   
- 
     font-size: 14px;
     line-height: 1.71;
     color: var(--second-text-color)
 }
-    .title {
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+.team {
+    background-color: var(--rgba-tean-color);
+
+}
+.title {
     font-size: 36px;
     line-height: 1.16;
 }
@@ -136,6 +143,9 @@ a {
     line-height: 1.18;
     color: var(--second-text-color);
 }
+.team-item {
+    background-color: var(--second-background-color);
+}
 
 .name-portfolio {
     font-weight: 700;
@@ -149,23 +159,33 @@ a {
     line-height: 1.87;
     color: var(--second-text-color);
 }
+.footer-web {
+    background-color: var(--background-color);
+}
+.span-studio-white {
+    color: var(--second-background-color)
+
+}
+
 .adress-footer{
     font-style: normal;
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--second-background-color);
-    background: var(--background-color);
+    color: rgba(255, 255, 255, 0.6);
     width: 1600px;
     height: 252px;
     left: 0px;
     top: 2094px;
 
 }
+.adress-footer-adress{
+    color: var(--second-background-color)
+}
 .adress-footer:hover,
 .adress-footer:focus {
-    color: var(--accent-color);
+    color: var(--second-background-color);
 }
 .button {
     font-weight: 400;
