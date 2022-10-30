@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/css/style.css">
 </head>
 <body>
-    <header>
+    <header> 
+        <div class="conteiner conteiner-item">
         <a href="#" class="logo">
             <span class="span span-web">Web</span>
             <span class="span span-studio">Studio</span>
@@ -26,26 +28,34 @@
             <li class="header-auto-nav"><a class="link-nav-auto" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="header-auto-nav"><a class="link-nav-auto" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-        
+    </div>
        </header> 
 
    <main>
     <h1 hidden>Портфоліо</h1>
+    <div class="conteiner ">
     <ul class="button">
-        <li><buttton class="button-list" type="button">Все</buttton></li>
-        <li><buttton class="button-list" type="button">Веб-сайти</buttton></li>
-        <li><buttton class="button-list" type="button">Приложения</buttton></li>
-        <li><buttton class="button-list" type="button">Дизайн</buttton></li>
-        <li><buttton class="button-list" type="button">Маркетинг</buttton></li>
+        <li class="button-item"><buttton class="button-list" type="button">Все</buttton></li>
+        <li class="button-item"><buttton class="button-list" type="button">Веб-сайти</buttton></li>
+        <li class="button-item"><buttton class="button-list" type="button">Приложения</buttton></li>
+        <li class="button-item"><buttton class="button-list" type="button">Дизайн</buttton></li>
+        <li class="button-item"><buttton class="button-list" type="button">Маркетинг</buttton></li>
     </ul>
+    </div>
     <section class="about-portfolio">
-        <ul>
+        <div class="conteiner">
+        <ul class="conteiner-portfolio">
             <li class="portfolio">
+                <article class="card">
+                    <div class="card-trumb">
                 <a href="#"></a>
                 <img src="./img2/photo.jpg" alt="photo" width="370">
+            </div>
+            <div class="card-content">
                 <h2 class="name-portfolio">Технокряк</h2>
                 <p class="text-portfolio-site">Веб-сайт</p>
-    
+            </div>
+            </article>
             </li>
             <li class="portfolio">
                 <a href="#"></a>
@@ -105,25 +115,27 @@
                
             </li>
         </ul>
+    </div>
     </section>
 
 </main>
 
 <!--Футер-->
 <footer class="footer-web">
+    <div class="conteiner conteiner-footer">
     <a href="#" class="logo">
         <span class="span span-web">Web</span>
         <span class="span span-studio-white">Studio</span>
      </a>
     <address class="adress">
-        <ul>
-            <li><a class="adress-footer adress-footer-adress" href="https://www.bing.com/maps?osid=618124d6-25ab-4f92-b28c-d882344e3ac4&cp=50.426915~30.533019&lvl=16&v=2&sV=2&form=S00027"  rel="noopener noreferrer nofollow" target="_blank"> м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li><a class="adress-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="adress-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="adress-i-tem">
+            <li class="i-tem-footer"><a class="adress-footer adress-footer-adress" href="https://www.bing.com/maps?osid=618124d6-25ab-4f92-b28c-d882344e3ac4&cp=50.426915~30.533019&lvl=16&v=2&sV=2&form=S00027"  rel="noopener noreferrer nofollow" target="_blank"> м. Київ, пр-т Лесі Українки, 26</a></li>
+            <li class="i-tem-footer"><a class="adress-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="i-tem-footer"><a class="adress-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
 
         </ul>
     </address>
-
+</div>
 </footer>
 </body>
 </html>
