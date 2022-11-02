@@ -183,22 +183,25 @@ a {
         display: flex;
         padding-left: 0;
         padding-right: 0;
-        margin-bottom: 118px;
-   
+        padding-bottom: 118px;
+        margin: 0;
+        
+       
         
     
     }
 .conteiner-about .i-tem + .i-tem {
 
     margin-left: 30px;
-    margin-right: 0;
+    
         
         
 
     }
-.conteiner-about .i-tem:not(:last-child) {
-    margin-right: 30px;
+    .about {
+        padding: 94px 0;
     }
+
 .about-text{
     margin-top: 0;
     margin-bottom: 0;
@@ -223,14 +226,15 @@ a {
     display: flex;
     align-items: center;
     padding-left: 0;
-    
+    gap: 30px; 
     
   
 }
 
 .i-tem {
     width: calc((100% - 60px) / 3);
-    margin-right: 30px;
+   
+
 }
 .conteiner-work .i-tem:nth-child(3n) {
     margin-right: 0;
@@ -262,7 +266,7 @@ a {
 .title {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 50;
+    margin-bottom: 50px;
 
     font-size: 36px;
     line-height: 1.16;
