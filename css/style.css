@@ -17,9 +17,11 @@ body{
     font-family: "Roboto", sans-serif;
     text-decoration: none;
    
-
 }
-
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    padding: 0;
+}
 
 
 li {
@@ -53,12 +55,11 @@ li {
 .logo {
     margin-top: 25px;
     margin-bottom: 25px;
+    margin-right: 93px;
 }
 .span-studio {
     color: var(--logo-text-color);
   
-  
-
 }
 
 .site-nav,
@@ -72,10 +73,6 @@ li {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    
-    
-    
-
 
 }
 .link-nav-site:hover, 
@@ -84,13 +81,8 @@ li {
 
 }
 .link-nav-site {
-  
-
 
     color: var(--primary-text-color);
-    
-    
-
 
 }
 .site-nav .header-site-nav+.header-site-nav {
@@ -128,10 +120,6 @@ a {
 .conteiner-item { 
     display: flex;
     text-align: center;
-
-    
-
-
 }
 .conteiner-hero {
     text-align: center;
@@ -183,25 +171,14 @@ a {
         display: flex;
         padding-left: 0;
         padding-right: 0;
-        padding-bottom: 118px;
         margin: 0;
         
-       
-        
-    
     }
 .conteiner-about .i-tem + .i-tem {
 
     margin-left: 30px;
-    
-        
-        
-
     }
-    .about {
-        padding: 94px 0;
-    }
-
+   
 .about-text{
     margin-top: 0;
     margin-bottom: 0;
@@ -304,7 +281,6 @@ a {
 }
 
 .name-portfolio {
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     }
@@ -364,7 +340,6 @@ a {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 94px;
     margin-bottom: 50px;
     padding-left: 0;
 
@@ -405,14 +380,6 @@ a {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
- 
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 94px;
-   
-    
-    
-    
 
 }
 img {
@@ -453,4 +420,7 @@ img {
 }
 .section {
     padding: 94px 0;
+}
+.work {
+    padding-top: 0;
 }
