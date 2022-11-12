@@ -7,7 +7,10 @@
     --background-color: #2F303A;
     --second-background-color: #ffffff;
     --rgba-color: rgba(255, 255, 255, 0.6);
+    --rgba-two-color: rgba(255,255,255, 0.1);
     --rgba-tean-color: #f5f4f4;
+    --rgba-hero: rgba(47, 48, 58, 0.4);
+     --icons-color: #AFB1B8;
 
 
 }
@@ -65,6 +68,7 @@ li {
 .site-nav,
 .auto-nav {
     display: flex;
+    
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 32px ;
@@ -75,11 +79,13 @@ li {
     line-height: 1.14;
 
 }
-.link-nav-site:hover, 
-.link-nav-auto:focus {
+.link-nav-site:hover,
+.link-nav-site:focus {
     color: var(--accent-color);
-
 }
+
+
+
 .link-nav-site {
 
     color: var(--primary-text-color);
@@ -96,13 +102,37 @@ margin-left: 50px;
   
     color: var(--second-text-color);
     margin-right: auto;
-    
+        
    
 }
-.auto-nav .header-auto-nav+ .header-auto-nav {
-    margin-left: 50px;
+.mail-tel-icons {
+    margin-right: 10px;
+}
+
+.link-nav-auto:hover,
+.link-nav-auto:focus {
+    color: var(--accent-color)
+    
 
 }
+.link-nav-auto:hover,
+.link-nav-auto:focus {
+    fill: var(--accent-color);
+}
+
+
+
+.auto-nav:hover
+.auto-nav:focus {
+    color: var(--accent-color);
+
+}.auto-nav .header-auto-nav+ .header-auto-nav {
+    margin-left: 50px;
+
+    
+}
+
+
 .auto-nav .header-auto-nav:not(:last-child) {
     margin-right: 30px;
 
@@ -125,9 +155,19 @@ a {
     text-align: center;
 }
 .hero {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 200px 0;
     background: var(--background-color);
+    background-image: linear-gradient( var(--rgba-hero),
+        var(--rgba-hero)),
+    url(../img/team.jpg);
+    
+    
 }
+
 
 .hero-title {
     margin-top: 0;
@@ -208,6 +248,27 @@ a {
   
 }
 
+.about-icons {
+    display: flex;
+    
+}
+
+.visually-hidden-icons {
+    padding: 25px 100px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+
+    background-color: var(--rgba-tean-color);
+    border-radius: 4px;
+    
+}
+.visually-hidden-icons:last-child {
+    margin-right: 0;
+
+}
+
+
 .i-tem {
     width: calc((100% - 60px) / 3);
    
@@ -234,6 +295,50 @@ a {
     margin-left: 0px;
     
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+.social-icon {
+    fill: var(--icons-color);
+
+}
+.social-link:hover .social-icon {
+fill: var(--second-background-color);
+}
+
+.title-list-team .social-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+.title-list-team .social-item {
+    width: 44px;
+    height: 44px;
+    background-color: var(--primary-wtite-color);
+    
+    margin-right: 10px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+.title-list-team .social-item:hover, 
+.title-list-team .social-item:focus {
+    background-color: var(--accent-color);
+
+}
+
+.title-list-team .social-item:last-child {
+    margin-right: 0;
+}
+
 .title-list-team .team-item:not(:last-child) {
     margin-right: 30px;
 
@@ -252,9 +357,6 @@ a {
 .title-list-team {
     display: flex;
   
-   
-    
-    
     padding-left: 0;
     margin-top: 0;
    
@@ -274,28 +376,71 @@ a {
 }
 .team-item {
     margin-left: 0;
-    outline: 1px solid #f5f4f4;
-    border-radius: 4px;
+    outline: 1px solid var(--rgba-tean-color);
+   
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
     background-color: var(--second-background-color);
 }
-
+.card-text {
+    padding-bottom: 30px ;
+}
 .name-portfolio {
     font-size: 18px;
     line-height: 2;
     }
 
 .text-portfolio-site {
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 16px;
     line-height: 1.87;
     color: var(--second-text-color);
 }
-.footer-web {
-    background-color: var(--background-color);
+
+.clients-baza {
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+.client-baza {
+    margin-right: 30px;
+    padding: 16px 32px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+}
+.client-baza:last-child {
+    margin-right: 0;
     
 }
+
+    
+.client-baza-icon {
+    fill: var(--icons-color);}
+
+.client-baza:hover   {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+    
+    }
+.client-baza:hover .client-baza-svg {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+
+.footer-web {
+    background-color: var(--background-color);
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+}
 .conteiner-footer {
+    margin-right: 0;
+    margin-left: 0;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -316,7 +461,7 @@ a {
 
     font-style: normal;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
@@ -367,7 +512,7 @@ a {
 
 }
 
-.button-list
+
 
 .button-list:hover,
 .button-list:focus {
@@ -423,4 +568,76 @@ img {
 }
 .work {
     padding-top: 0;
+}
+
+
+
+.welcome {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--second-background-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+
+.welcome-social-icons .welcome-social-item {
+    display: flex;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    background-color: var(--rgba-two-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+.welcome-social-icons .welcome-social-item:last-child  {
+margin-right: 0;
+}
+
+
+.welcome-social-item {
+ 
+    justify-content: center;
+    align-items: center;
+}
+.welcome-social-icon {
+    fill: var(--primary-wtite-color);
+    
+}
+.welcome-social-icons .welcome-social-item:hover, 
+.welcome-social-icons .welcome-social-item:focus {
+    fill: var(--second-background-color);
+    background-color: var(--accent-color);
+}
+.welcome-social-link .link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-welcome {
+    padding-top: 70px;
+    padding-left: 70px;
+    
+}
+.footer-web {
+    margin-right: 0;
+}
+.welcome-social-icons {
+    display: flex;
+}
+
+.welcom-section {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 140px;
+   
+    display: flex;
+    justify-content: flex-start;
 }
