@@ -206,9 +206,9 @@ a {
     line-height: 1.14;
     }
 .conteiner-about {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    
+    justify-content: center;
         padding-left: 0;
         padding-right: 0;
         margin: 0;
@@ -221,13 +221,17 @@ a {
 
 
 .social-icon-about {
-padding-top: 25px;
-   
-
+    
+}
+.advances-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 100px;
     border-radius: 4px;
     background-color: var(--rgba-tean-color);
+    margin-bottom: 30px;
 }
-
 
    
 .about-text{
