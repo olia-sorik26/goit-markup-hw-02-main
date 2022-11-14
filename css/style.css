@@ -218,6 +218,15 @@ a {
 
     margin-left: 30px;
     }
+.social-icon-about {
+
+   
+
+    border-radius: 4px;
+    background-color: var(--rgba-tean-color);
+}
+
+
    
 .about-text{
     margin-top: 0;
@@ -322,7 +331,7 @@ fill: var(--second-background-color);
 .title-list-team .social-item {
     width: 44px;
     height: 44px;
-    background-color: var(--primary-wtite-color);
+    background-color: var(--second-background-color);
     
     margin-right: 10px;
     margin-top: 30px;
@@ -373,6 +382,8 @@ fill: var(--second-background-color);
     font-size: 16px;
     line-height: 1.18;
     color: var(--second-text-color);
+
+    margin-top: 10px;
 }
 .team-item {
     margin-left: 0;
@@ -386,7 +397,9 @@ fill: var(--second-background-color);
     background-color: var(--second-background-color);
 }
 .card-text {
-    padding-bottom: 30px ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
 .name-portfolio {
     font-size: 18px;
@@ -438,12 +451,7 @@ fill: var(--second-background-color);
     margin-left: 0;
     margin-right: 0;
 }
-.conteiner-footer {
-    margin-right: 0;
-    margin-left: 0;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 .span-studio-white {
     color: var(--second-background-color)
 
@@ -571,7 +579,10 @@ img {
 }
 
 
-
+.footer-web {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .welcome {
     font-size: 14px;
     line-height: 16px;
@@ -625,19 +636,23 @@ margin-right: 0;
     padding-left: 70px;
     
 }
-.footer-web {
-    margin-right: 0;
-}
+
 .welcome-social-icons {
     display: flex;
 }
 
-.welcom-section {
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 140px;
-   
+.footer-web .conteiner  {
     display: flex;
-    justify-content: flex-start;
+    align-items: baseline;
+    
+    
+    
 }
+
+.web {
+    margin-right: 70px;
+}
+.conteiner .web:last-child {
+margin-right: 30px;
+}
+
