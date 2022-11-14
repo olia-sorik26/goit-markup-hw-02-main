@@ -46,7 +46,7 @@ li {
     
 }
 .conteiner {
-    max-width: 1200px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -172,8 +172,6 @@ a {
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-   
-
 
     font-weight: 900;
     font-size: 44px;
@@ -209,6 +207,8 @@ a {
     }
 .conteiner-about {
         display: flex;
+        align-items: center;
+        justify-content: center;
         padding-left: 0;
         padding-right: 0;
         margin: 0;
@@ -218,8 +218,10 @@ a {
 
     margin-left: 30px;
     }
-.social-icon-about {
 
+
+.social-icon-about {
+padding-top: 25px;
    
 
     border-radius: 4px;
@@ -652,7 +654,5 @@ margin-right: 0;
 .web {
     margin-right: 70px;
 }
-.conteiner .web:last-child {
-margin-right: 30px;
-}
+
 
